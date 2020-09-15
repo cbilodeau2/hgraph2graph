@@ -7,6 +7,7 @@ def process(data):
     vocab = set()
     for line in data:
         s = line.strip("\r\n ")
+        #graph = Chem.rdmolops.GetAdjacencyMatrix(Chem.MolFromSmiles(s))
         hmol = MolGraph(s)
         for node,attr in hmol.mol_tree.nodes(data=True):
             smiles = attr['smiles']
@@ -26,6 +27,11 @@ if __name__ == "__main__":
 
     pool = Pool(ncpu)
     vocab_list = pool.map(process, batches)
+    
+#     vocab_list = []
+#     for batch in batches:
+#         vocab_list.append(process(batch))
+    
     vocab = [(x,y) for vocab in vocab_list for x,y in vocab]
     vocab = list(set(vocab))
 
