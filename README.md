@@ -9,6 +9,7 @@ First install the dependencies via conda:
  * RDKit
  * numpy
  * Python >= 3.6
+ * Python < 3.8
 
 And then run `pip install .`
 
@@ -44,3 +45,12 @@ python gnn_train.py --train train_processed/ --vocab data/qed/vocab.txt --save_d
 ```
 python decode.py --test data/qed/valid.txt --vocab data/qed/vocab.txt --model models/model.5 --num_decode 20 > results.csv
 ```
+
+## Using the scripts/notebooks
+
+```
+sh run.sh
+sh evaluate.sh
+```
+You can then use Test_Summary.ipynb to calculate standard statistics for the test sets. Be sure to check that the paths are correct for your usage (set in each of the shell scripts). You also need to train a separate chemprop or other predictor model.
+
