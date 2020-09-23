@@ -1,0 +1,40 @@
+========Starting Iteration 1========
+Create Pairlist
+Execution time was 218 seconds.
+Get Vocabulary
+Execution time was 8 seconds.
+Preprocess Data
+Execution time was 195 seconds.
+Train Model
+Execution time was 1879 seconds.
+Make Predictions: Model 1
+Execution time was 9 seconds.
+Make Predictions: SA Score
+Execution time was 2 seconds.
+Select Molecules for Generation
+Execution time was 1 seconds.
+Generate Molecules
+Execution time was 1131 seconds.
+Make Predictions
+Execution time was 10 seconds.
+Add Molecules to Pairlist
+Execution time was 277 seconds.
+========Starting Iteration  2 ========
+Get Vocabulary
+Execution time was 9 seconds.
+Preprocess Data
+Execution time was 274 seconds.
+Train Model
+Execution time was 6 seconds.
+Make Predictions: Model 1
+Execution time was 9 seconds.
+Make Predictions: SA Score
+Execution time was 2 seconds.
+Select Molecules for Generation
+Execution time was 1 seconds.
+Generate Molecules
+Execution time was 6 seconds.
+Make Predictions
+Execution time was 2 seconds.
+Add Molecules to Pairlist
+Execution time was 3 seconds.

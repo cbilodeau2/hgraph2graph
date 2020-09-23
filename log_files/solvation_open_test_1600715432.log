@@ -1,0 +1,12 @@
+========Starting Iteration 1========
+Create Pairlist
+Execution time was 232 seconds.
+Get Vocabulary
+Execution time was 6 seconds.
+Preprocess Data
+Execution time was 207 seconds.
+Train Model
+Execution time was 1766 seconds.
+Select Molecules for Generation
+Execution time was 1 seconds.
+Generate Molecules

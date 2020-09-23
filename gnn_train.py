@@ -19,6 +19,7 @@ parser.add_argument('--train', required=True)
 parser.add_argument('--vocab', required=True)
 parser.add_argument('--atom_vocab', default=common_atom_vocab)
 parser.add_argument('--save_dir', required=True)
+parser.add_argument('--load_dir', type=str,default=None)
 parser.add_argument('--load_epoch', type=int, default=-1)
 
 parser.add_argument('--conditional', action='store_true')
@@ -65,7 +66,7 @@ for param in model.parameters():
         nn.init.xavier_normal_(param)
 
 if args.load_epoch >= 0:
-    model.load_state_dict(torch.load(args.save_dir + "/model." + str(args.load_epoch)))
+    model.load_state_dict(torch.load(args.load_dir + "/model." + str(args.load_epoch)))
 
 print("Model #Params: %dK" % (sum([x.nelement() for x in model.parameters()]) / 1000,))
 

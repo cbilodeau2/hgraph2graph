@@ -1,0 +1,14 @@
+========Starting Iteration 1========
+Create Pairlist
+Execution time was 3 seconds.
+Get Vocabulary
+Execution time was 0 seconds.
+Preprocess Data
+Execution time was 0 seconds.
+Train Model
+Execution time was 1 seconds.
+Select Molecules for Generation
+Execution time was 0 seconds.
+Generate Molecules
+Execution time was 2 seconds.
+Make Predictions

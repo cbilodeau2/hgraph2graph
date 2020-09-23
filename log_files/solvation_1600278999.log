@@ -1,0 +1,215 @@
+========Starting Iteration 1========
+Create Pairlist
+Execution time was 116 seconds.
+Get Vocabulary
+Execution time was 9 seconds.
+Preprocess Data
+Execution time was 115 seconds.
+Train Model
+Execution time was 1001 seconds.
+Make Predictions: Model 1
+Execution time was 10 seconds.
+Make Predictions: SA Score
+Execution time was 3 seconds.
+Select Molecules for Generation
+Execution time was 0 seconds.
+Generate Molecules
+Execution time was 860 seconds.
+Make Predictions
+Execution time was 8 seconds.
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+Execution time was 9 seconds.
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+Execution time was 9 seconds.
+Add Molecules to Pairlist
+Execution time was 0 seconds.
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+Execution time was 8 seconds.
+Add Molecules to Pairlist
+Execution time was 0 seconds.
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 0 seconds.
+Make Predictions
+Execution time was 9 seconds.
+Add Molecules to Pairlist
+Execution time was 3 seconds.
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 2 seconds.
+Make Predictions
+Execution time was 9 seconds.
+Add Molecules to Pairlist
+Execution time was 2 seconds.
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+Execution time was 8 seconds.
+Add Molecules to Pairlist
+Execution time was 2 seconds.
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+Execution time was 9 seconds.
+Add Molecules to Pairlist
+Execution time was 2 seconds.
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+Execution time was 9 seconds.
+Add Molecules to Pairlist
+Execution time was 2 seconds.
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+Execution time was 9 seconds.
+Add Molecules to Pairlist
+Execution time was 2 seconds.
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+Execution time was 8 seconds.
+Add Molecules to Pairlist
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+Execution time was 8 seconds.
+Add Molecules to Pairlist
+Execution time was 104 seconds.
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+Execution time was 9 seconds.
+Add Molecules to Pairlist
+Execution time was 102 seconds.
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+Execution time was 9 seconds.
+Add Molecules to Pairlist
+Execution time was 108 seconds.
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+Execution time was 8 seconds.
+Add Molecules to Pairlist
+Execution time was 143 seconds.
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 0 seconds.
+Make Predictions
+Execution time was 10 seconds.
+Add Molecules to Pairlist
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+Execution time was 11 seconds.
+Add Molecules to Pairlist
+Execution time was 61 seconds.
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+Execution time was 8 seconds.
+Add Molecules to Pairlist
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+Execution time was 9 seconds.
+Add Molecules to Pairlist
+Execution time was 2 seconds.
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 1 seconds.
+Make Predictions
+Execution time was 8 seconds.
+Add Molecules to Pairlist
+Execution time was 267 seconds.
+========Starting Iteration 1========
+Generate Molecules
+Execution time was 5 seconds.
+Make Predictions
+Execution time was 30 seconds.
+Add Molecules to Pairlist
+Execution time was 254 seconds.
+STARTING ITERATION 2
+Get Vocabulary
+Execution time was 19 seconds.
+Preprocess Data
+Execution time was 0 seconds.
+========Starting Iteration 1========
+STARTING ITERATION 2
+Get Vocabulary
+Execution time was 19 seconds.
+Preprocess Data
+Execution time was 224 seconds.
+========Starting Iteration 1========
+========Starting Iteration  2 ========
+Train Model
+Execution time was 53 seconds.
+Make Predictions: Model 1
+Execution time was 20 seconds.
+Make Predictions: SA Score
+Execution time was 7 seconds.
+Select Molecules for Generation
+Execution time was 3 seconds.
+========Starting Iteration 1========
+========Starting Iteration  2 ========
+Train Model
+Execution time was 2457 seconds.
+Make Predictions: Model 1
+Execution time was 24 seconds.
+Make Predictions: SA Score
+Execution time was 6 seconds.
+Select Molecules for Generation
+Execution time was 3 seconds.
+========Starting Iteration 1========
+========Starting Iteration  2 ========
+Select Molecules for Generation
+Execution time was 5 seconds.
+Generate Molecules
+Execution time was 1394 seconds.
+Make Predictions
+Execution time was 24 seconds.
+Add Molecules to Pairlist
+Execution time was 305 seconds.

@@ -1,0 +1,11 @@
+========Starting Iteration 1========
+Create Pairlist
+Execution time was 104 seconds.
+Get Vocabulary
+Execution time was 6 seconds.
+Preprocess Data
+Execution time was 96 seconds.
+Train Model
+Execution time was 1031 seconds.
+Make Predictions: Model 1
+Execution time was 4 seconds.
