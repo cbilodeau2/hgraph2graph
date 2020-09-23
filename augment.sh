@@ -21,43 +21,43 @@ mkdir checkpoints/$folder
 dir=checkpoints/$folder/generation1
 mkdir $dir
 
-# # Extract Vocabulary:
-# echo "=========Get Vocabulary========"
-# python get_vocab.py <data/$name/mols.txt > data/$name/vocab.txt
+# Extract Vocabulary:
+echo "=========Get Vocabulary========"
+python get_vocab.py <data/$name/mols.txt > data/$name/vocab.txt
 
-# # Preprocess Data:
-# echo "=========Preprocess Data========"
-# python preprocess.py --train data/$name/train_pairs.txt --vocab data/$name/vocab.txt --ncpu 16 < data/$name/train_pairs.txt
-# mkdir $dir/train_processed
-# mv tensor* $dir/train_processed/
+# Preprocess Data:
+echo "=========Preprocess Data========"
+python preprocess.py --train data/$name/train_pairs.txt --vocab data/$name/vocab.txt --ncpu 16 < data/$name/train_pairs.txt
+mkdir $dir/train_processed
+mv tensor* $dir/train_processed/
 
-# # Train Model:
-# echo "=========Train Model========"
-# mkdir $dir/models/
-# python gnn_train.py --train $dir/train_processed/ --vocab data/$name/vocab.txt --save_dir $dir/models/ --epoch $n_epochs
+# Train Model:
+echo "=========Train Model========"
+mkdir $dir/models/
+python gnn_train.py --train $dir/train_processed/ --vocab data/$name/vocab.txt --save_dir $dir/models/ --epoch $n_epochs
 
-# # Predict solubility for input dataset:
-# mkdir $dir/augment/
-# echo "=========Predict Solubility========"
-# rm -rf data/$name/all_mols.txt 
-# echo "SMILES" >> data/$name/all_mols.txt
-# cat data/$name/mols.txt >> data/$name/all_mols.txt
+# Predict solubility for input dataset:
+mkdir $dir/augment/
+echo "=========Predict Solubility========"
+rm -rf data/$name/all_mols.txt 
+echo "SMILES" >> data/$name/all_mols.txt
+cat data/$name/mols.txt >> data/$name/all_mols.txt
 
-# cp data/$name/train_pairs.txt $dir/augment/
+cp data/$name/train_pairs.txt $dir/augment/
 
-# python /data/rsg/chemistry/cbilod/chemprop/predict.py --test_path data/$name/all_mols.txt --checkpoint_dir $predictor_path --preds_path $dir/augment/mols_pred.csv
+python /data/rsg/chemistry/cbilod/chemprop/predict.py --test_path data/$name/all_mols.txt --checkpoint_dir $predictor_path --preds_path $dir/augment/mols_pred.csv
 
-# # Select molecules in the top half of the dataset:
-# echo "=========Select Molecules for Generation========"
-# python augment_scripts/select_mols.py --input $dir/augment/mols_pred.csv --output $dir/augment/gen_in.csv
+# Select molecules in the top half of the dataset:
+echo "=========Select Molecules for Generation========"
+python augment_scripts/select_mols.py --input $dir/augment/mols_pred.csv --output $dir/augment/gen_in.csv
 
-# # Generate Molecules for the top half of the dataset:
-# echo "=========Decode Model========"
-# python decode.py --test $dir/augment/gen_in.csv --vocab data/$name/vocab.txt --model $dir/models/model.9 --num_decode 20 > $dir/augment/gen_out.csv
+# Generate Molecules for the top half of the dataset:
+echo "=========Decode Model========"
+python decode.py --test $dir/augment/gen_in.csv --vocab data/$name/vocab.txt --model $dir/models/model.9 --num_decode 20 > $dir/augment/gen_out.csv
 
 # Prune new pairs and add to pairlist:
-# echo "=========Add to Pairlist========"
-# python augment_scripts/pairlist_update.py --input $dir/augment/gen_out.csv --output $dir/augment/pairlist.txt --folder $dir/augment --old_pairs data/$name/train_pairs.txt --mol_list $dir/augment/mols.txt
+echo "=========Add to Pairlist========"
+python augment_scripts/pairlist_update.py --input $dir/augment/gen_out.csv --output $dir/augment/pairlist.txt --folder $dir/augment --old_pairs data/$name/train_pairs.txt --mol_list $dir/augment/mols.txt
 
 # Additional Rounds =================================================================
 
